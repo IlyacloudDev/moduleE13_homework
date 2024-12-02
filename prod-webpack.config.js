@@ -7,7 +7,7 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 module.exports = {
     mode: 'production',
-    entry: './src/index.js',
+    entry: './src/js/index.js',
     output: {
         path: path.resolve(__dirname, 'dist/prod-dist'),
         filename: 'prod-bundle.js'
@@ -17,7 +17,7 @@ module.exports = {
             filename: 'prod-style.css'
         }),
         new HtmlWebpackPlugin({
-            template: './src/index.html',
+            template: './src/html/index.html',
             filename: 'prod-index.html'
         })
     ],
